@@ -1,0 +1,9 @@
+from collections import Counter
+n=int(input())
+l=[]
+for i in range(n):
+    l.append(input())
+c=Counter(l)  #returns distinct key and count of the keys (values) in dictionary form  
+print(len(c))  # prints key of c
+for i in c.values():
+    print(i,end=' ') # Prints values of c ; end used for spacing like output
